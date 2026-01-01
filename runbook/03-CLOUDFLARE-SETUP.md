@@ -407,16 +407,16 @@ The integration logs to: `vulnerable/logs/cloudflare.log`
 
 ### **Security Considerations:**
 
-⚠️ **Never expose** vulnerable version publicly long-term
-⚠️ **Use strong passwords** for Cloudflare account
-⚠️ **Enable 2FA** on Cloudflare account
-⚠️ **Monitor logs** for suspicious activity
-⚠️ **Set IP allowlist** to restrict access
-⚠️ **Regular backups** of configuration
+**WARNING: Never expose** vulnerable version publicly long-term
+**WARNING: Use strong passwords** for Cloudflare account
+**WARNING: Enable 2FA** on Cloudflare account
+**WARNING: Monitor logs** for suspicious activity
+**WARNING: Set IP allowlist** to restrict access
+**WARNING: Regular backups** of configuration
 
 ---
 
-## 📚 **Additional Resources**
+## Additional Resources
 
 **Cloudflare Documentation:**
 - WAF Rules: https://developers.cloudflare.com/waf/
@@ -456,7 +456,7 @@ Educational debug panels
 Comprehensive logging
 Industry-standard WAF experience
 
-**Start training and teach real-world bypass techniques!** 🚀
+**Start training and teach real-world bypass techniques!**
 
 ---
 

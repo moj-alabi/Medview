@@ -97,7 +97,7 @@ $doctors = mysqli_query($con, $doctors_query);
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:
     </div>
 
     <div class="container-fluid">

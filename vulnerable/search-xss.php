@@ -61,14 +61,14 @@ if(isset($_GET['search'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="vulnerability-info">
-                    <h5>🎯 Training Target: Cross-Site Scripting (XSS)</h5>
+                    <h5>TARGET: Training Target: Cross-Site Scripting (XSS)</h5>
                     <p><strong>Vulnerabilities Present:</strong></p>
                     <ul>
                         <li>Reflected XSS in search results</li>
@@ -136,7 +136,7 @@ if(isset($_GET['search'])) {
                 </div>
                 
                 <div class="vulnerability-info mt-3">
-                    <h6>💡 Learning Points:</h6>
+                    <h6>TIP: Learning Points:</h6>
                     <ol>
                         <li><strong>Reflected XSS:</strong> User input is immediately displayed without encoding</li>
                         <li><strong>Stored XSS:</strong> Database content is displayed without encoding</li>
@@ -144,7 +144,7 @@ if(isset($_GET['search'])) {
                         <li><strong>Multiple injection points:</strong> Search term, results, error messages</li>
                     </ol>
                     
-                    <h6>🔍 XSS Payloads to Try:</h6>
+                    <h6>SEARCH: XSS Payloads to Try:</h6>
                     <pre>Basic: &lt;script&gt;alert('XSS')&lt;/script&gt;
 
 Image: &lt;img src=x onerror=alert('XSS')&gt;
@@ -159,13 +159,13 @@ SVG: &lt;svg/onload=alert('XSS')&gt;
 
 Iframe: &lt;iframe src="javascript:alert('XSS')"&gt;&lt;/iframe&gt;</pre>
                     
-                    <h6>🛡️ How to Fix:</h6>
+                    <h6>FIX: How to Fix:</h6>
                     <pre>// Instead of: echo $search_term;
 // Use: echo htmlspecialchars($search_term, ENT_QUOTES, 'UTF-8');</pre>
                 </div>
 
                 <div class="vulnerability-info mt-3">
-                    <h6>⚠️ Real-World Impact:</h6>
+                    <h6>WARNING: Real-World Impact:</h6>
                     <ul>
                         <li>Session hijacking via cookie theft</li>
                         <li>Keylogging and credential theft</li>

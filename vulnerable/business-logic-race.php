@@ -87,7 +87,7 @@ if(isset($_POST['book_many'])) {
         <?php if($message) echo "<div class='alert alert-info'>$message</div>"; ?>
         
         <div class="alert alert-danger">
-            <h5>🎯 Vulnerabilities: Business Logic + Race Conditions</h5>
+            <h5>TARGET: Vulnerabilities: Business Logic + Race Conditions</h5>
             <p><strong>Exploit Methods:</strong></p>
             <ul>
                 <li><strong>Negative Pricing:</strong> Enter -100 in refund to add money</li>
@@ -128,7 +128,7 @@ if(isset($_POST['book_many'])) {
 
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">💡 Exploitation Guide</div>
+                    <div class="card-header">TIP: Exploitation Guide</div>
                     <div class="card-body small">
                         <p><strong>Race Condition Attack:</strong></p>
                         <pre>for i in {1..10}; do

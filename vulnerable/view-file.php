@@ -75,7 +75,7 @@ if(isset($_GET['include'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
@@ -83,7 +83,7 @@ if(isset($_GET['include'])) {
         <p class="text-muted">View patient documents and reports</p>
 
         <div class="alert alert-danger">
-            <h5>🎯 Training Target: Directory Traversal / Path Traversal</h5>
+            <h5>TARGET: Training Target: Directory Traversal / Path Traversal</h5>
             <p><strong>Vulnerabilities Present:</strong></p>
             <ul>
                 <li>No path validation or sanitization</li>
@@ -149,7 +149,7 @@ if(isset($_GET['include'])) {
 
         <div class="card mt-4">
             <div class="card-header bg-info text-white">
-                <h5>💡 What is Directory Traversal?</h5>
+                <h5>TIP: What is Directory Traversal?</h5>
             </div>
             <div class="card-body">
                 <p>Directory traversal (path traversal) allows attackers to access files outside the intended directory by manipulating file paths.</p>
@@ -175,7 +175,7 @@ if(isset($_GET['include'])) {
                     <li><strong>Source code</strong> - Read PHP/application files</li>
                 </ul>
 
-                <h6>🛡️ How to Fix:</h6>
+                <h6>FIX: How to Fix:</h6>
                 <pre>
 // 1. Use whitelist of allowed files
 $allowed_files = ['report.txt', 'records.txt'];

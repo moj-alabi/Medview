@@ -364,8 +364,6 @@ Week 8: CTF completion & remediation study
 - **Bold** for important terms
 - *Italics* for emphasis
 - > Blockquotes for tips
-- ⚠️ Warnings clearly marked
-- ✅ Steps clearly numbered
 
 ### **Difficulty Indicators:**
 - Low - Beginner friendly

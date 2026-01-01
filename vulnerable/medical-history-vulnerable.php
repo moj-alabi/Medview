@@ -34,7 +34,7 @@ $user = mysqli_fetch_array($result);
     </style>
 </head>
 <body>
-    <div class="warning-banner">⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️</div>
+    <div class="warning-banner">WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:</div>
 
     <div class="container-fluid">
         <div class="row">

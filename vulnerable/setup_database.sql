@@ -187,4 +187,4 @@ SELECT 'User: ali@sheflabs.com / Password123' AS UserLogin;
 SELECT 'User: john@test.com / password123' AS AlternateLogin;
 SELECT 'Admin: admin / admin123' AS AdminLogin;
 SELECT 'Doctor: sarah@medview.com / doctor123' AS DoctorLogin;
-SELECT '⚠️  All passwords stored as MD5 (VULNERABLE!)' AS Warning;
+SELECT 'WARNING: All passwords stored as MD5 (VULNERABLE!)' AS Warning;

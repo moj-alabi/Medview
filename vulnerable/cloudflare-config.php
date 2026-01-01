@@ -161,7 +161,7 @@ class CloudflareWAF {
         $html = '
         <div class="card mt-3 border-info">
             <div class="card-header bg-info text-white">
-                <h6 class="mb-0">☁️ Cloudflare WAF Status</h6>
+                <h6 class="mb-0">CLOUD: Cloudflare WAF Status</h6>
             </div>
             <div class="card-body small">
                 <table class="table table-sm table-bordered mb-0">

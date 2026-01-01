@@ -81,7 +81,7 @@ $appointments = mysqli_query($con, $apt_query);
     </style>
 </head>
 <body>
-    <div class="warning-banner">⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️</div>
+    <div class="warning-banner">WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:</div>
 
     <div class="container-fluid">
         <div class="row">
@@ -103,7 +103,7 @@ $appointments = mysqli_query($con, $apt_query);
                 <?php echo $message; ?>
 
                 <div class="alert alert-danger">
-                    <h5>🎯 Vulnerability: Mass Assignment / Parameter Pollution</h5>
+                    <h5>TARGET: Vulnerability: Mass Assignment / Parameter Pollution</h5>
                     <p><strong>How to Exploit:</strong></p>
                     <ul>
                         <li>Add <code>discount=1000</code> to POST request</li>
@@ -154,7 +154,7 @@ $appointments = mysqli_query($con, $apt_query);
 
                 <div class="card mt-4">
                     <div class="card-header bg-info text-white">
-                        <h5>💡 Mass Assignment Explained</h5>
+                        <h5>TIP: Mass Assignment Explained</h5>
                     </div>
                     <div class="card-body">
                         <p><strong>What is Mass Assignment?</strong></p>
@@ -176,7 +176,7 @@ $appointments = mysqli_query($con, $apt_query);
                             <li><strong>E-commerce:</strong> Modify prices, discounts, quantities</li>
                         </ul>
 
-                        <h6>🛡️ How to Fix:</h6>
+                        <h6>FIX: How to Fix:</h6>
                         <pre>// Instead of: extract($_POST);
 // Use whitelist approach:
 $allowed = ['appointment_id', 'payment_amount'];

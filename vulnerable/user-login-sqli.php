@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
     // Check Cloudflare WAF first
     $cf_validation = CloudflareWAF::validateRequest($temp_difficulty);
     if(!$cf_validation['allowed']) {
-        $_SESSION['errmsg'] = "🛡️ Cloudflare WAF: " . $cf_validation['reason'];
+        $_SESSION['errmsg'] = "FIX: Cloudflare WAF: " . $cf_validation['reason'];
         
         // Log Cloudflare block
         CloudflareWAF::logEvent($con, 0, 'waf_block', [
@@ -128,7 +128,7 @@ if(isset($_POST['submit'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
@@ -136,7 +136,7 @@ if(isset($_POST['submit'])) {
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="vulnerability-info">
-                    <h5>🎯 Training Target: SQL Injection</h5>
+                    <h5>TARGET: Training Target: SQL Injection</h5>
                     <p><strong>Vulnerabilities Present:</strong></p>
                     <ul>
                         <li>SQL Injection in username field</li>
@@ -152,7 +152,7 @@ if(isset($_POST['submit'])) {
                 <!-- Difficulty Selector -->
                 <div class="card mb-3">
                     <div class="card-header bg-info text-white">
-                        <h5>🎯 Select Difficulty Level</h5>
+                        <h5>TARGET: Select Difficulty Level</h5>
                     </div>
                     <div class="card-body">
                         <form method="post">
@@ -243,7 +243,7 @@ if(isset($_POST['submit'])) {
                 <?php endif; ?>
                 
                 <div class="vulnerability-info mt-3">
-                    <h6>💡 Learning Points:</h6>
+                    <h6>TIP: Learning Points:</h6>
                     <ol>
                         <li>SQL queries use direct string concatenation</li>
                         <li>User input is not sanitized or escaped</li>

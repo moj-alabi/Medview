@@ -9,7 +9,7 @@ class DifficultyManager {
             'low' => [
                 'name' => 'Low',
                 'color' => 'success',
-                'icon' => '🟢',
+                'icon' => '[LOW]',
                 'description' => 'Maximum vulnerabilities, obvious hints, easy exploitation',
                 'sql_protection' => false,
                 'xss_protection' => false,
@@ -22,7 +22,7 @@ class DifficultyManager {
             'medium' => [
                 'name' => 'Medium',
                 'color' => 'warning',
-                'icon' => '🟡',
+                'icon' => '[MEDIUM]',
                 'description' => 'Some basic protections, requires bypass techniques',
                 'sql_protection' => 'basic', // mysqli_real_escape_string
                 'xss_protection' => 'basic', // htmlspecialchars sometimes
@@ -35,7 +35,7 @@ class DifficultyManager {
             'hard' => [
                 'name' => 'Hard',
                 'color' => 'danger',
-                'icon' => '🔴',
+                'icon' => '[HARD]',
                 'description' => 'Good security practices, advanced exploitation required',
                 'sql_protection' => 'prepared_statements',
                 'xss_protection' => 'full',
@@ -48,7 +48,7 @@ class DifficultyManager {
             'impossible' => [
                 'name' => 'Impossible',
                 'color' => 'dark',
-                'icon' => '⚫',
+                'icon' => '[IMPOSSIBLE]',
                 'description' => 'Production-level security, nearly impossible to exploit',
                 'sql_protection' => 'prepared_statements',
                 'xss_protection' => 'full',

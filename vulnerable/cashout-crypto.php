@@ -99,7 +99,7 @@ if(isset($_POST['send_crypto'])) {
     </style>
 </head>
 <body>
-    <div class="warning-banner">⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️</div>
+    <div class="warning-banner">WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:</div>
     
     <?php echo display_exploit_notification($exploit_result); ?>
 
@@ -113,13 +113,13 @@ if(isset($_POST['send_crypto'])) {
                 <a href="dashboard-vulnerable.php">Dashboard</a>
                 <a href="book-appointment-vulnerable.php">Book Appointment</a>
                 <a href="mass-assignment-vulnerable.php">Make Payment</a>
-                <a href="cashout-crypto.php" class="active">💰 Cashout & Crypto</a>
+                <a href="cashout-crypto.php" class="active">MONEY: Cashout & Crypto</a>
                 <a href="profile-vulnerable.php">My Profile</a>
                 <a href="user-login-sqli.php">Logout</a>
             </div>
 
             <div class="col-md-10 content">
-                <h2>💰 Cashout & Cryptocurrency Exchange</h2>
+                <h2>MONEY: Cashout & Cryptocurrency Exchange</h2>
                 <?php echo $message; ?>
 
                 <!-- Balance Display -->
@@ -130,7 +130,7 @@ if(isset($_POST['send_crypto'])) {
                 </div>
 
                 <div class="alert alert-warning">
-                    <h5>🎯 Vulnerabilities in This Page:</h5>
+                    <h5>TARGET: Vulnerabilities in This Page:</h5>
                     <ul>
                         <li><strong>Negative Withdrawal:</strong> Enter -500 in amount field</li>
                         <li><strong>Rate Manipulation:</strong> Modify rate parameter in crypto purchase</li>
@@ -145,7 +145,7 @@ if(isset($_POST['send_crypto'])) {
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header bg-primary text-white">
-                                <h5>🏦 Bank Withdrawal (Traditional)</h5>
+                                <h5>BANK: Bank Withdrawal (Traditional)</h5>
                             </div>
                             <div class="card-body">
                                 <form method="post">
@@ -211,7 +211,7 @@ if(isset($_POST['send_crypto'])) {
                                     <div class="form-group">
                                         <label>Exchange Rate:</label>
                                         <input type="number" name="rate" id="rate" class="form-control" value="<?php echo $btc_rate; ?>" required>
-                                        <small class="text-danger">⚠️ Vulnerable: Change this to manipulate rate!</small>
+                                        <small class="text-danger">WARNING: Vulnerable: Change this to manipulate rate!</small>
                                     </div>
                                     <button type="submit" name="buy_crypto" class="btn btn-warning btn-block">
                                         Purchase Crypto
@@ -225,7 +225,7 @@ if(isset($_POST['send_crypto'])) {
                 <!-- Crypto Send -->
                 <div class="card mt-4">
                     <div class="card-header bg-success text-white">
-                        <h5>📤 Send Cryptocurrency</h5>
+                        <h5>SEND: Send Cryptocurrency</h5>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -242,7 +242,7 @@ if(isset($_POST['send_crypto'])) {
                                     <div class="form-group">
                                         <label>Crypto Address:</label>
                                         <input type="text" name="crypto_address" class="form-control" placeholder="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" required>
-                                        <small class="text-danger">⚠️ No validation - XSS possible!</small>
+                                        <small class="text-danger">WARNING: No validation - XSS possible!</small>
                                     </div>
                                     <div class="form-group">
                                         <label>Amount:</label>
@@ -255,7 +255,7 @@ if(isset($_POST['send_crypto'])) {
                             </div>
                             <div class="col-md-6">
                                 <div class="alert alert-info">
-                                    <h6>💡 Simulated Crypto Transfer</h6>
+                                    <h6>TIP: Simulated Crypto Transfer</h6>
                                     <p>This simulates sending cryptocurrency to an external wallet address.</p>
                                     <p><strong>Vulnerabilities:</strong></p>
                                     <ul class="small">
@@ -273,7 +273,7 @@ if(isset($_POST['send_crypto'])) {
                 <!-- Exploit Guide -->
                 <div class="card mt-4">
                     <div class="card-header bg-danger text-white">
-                        <h5>🎯 Exploitation Examples</h5>
+                        <h5>TARGET: Exploitation Examples</h5>
                     </div>
                     <div class="card-body">
                         <h6>1. Negative Withdrawal (Get Free Money):</h6>
@@ -296,7 +296,7 @@ Result: XSS executes when address is displayed</pre>
                         <pre>Amount: 999999999999999
 Result: Integer overflow causes calculation errors</pre>
 
-                        <h6>🛡️ How to Fix:</h6>
+                        <h6>FIX: How to Fix:</h6>
                         <pre>// Validate amount
 if($amount <= 0) die("Amount must be positive");
 

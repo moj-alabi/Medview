@@ -81,14 +81,14 @@ function createToken($data) {
     </style>
 </head>
 <body>
-    <div class="warning-banner">⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️</div>
+    <div class="warning-banner">WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:</div>
     
     <div class="container">
         <h2>User Preferences Manager</h2>
         <?php echo $message; ?>
 
         <div class="alert alert-danger">
-            <h5>🎯 Training Target: Insecure Deserialization & Software Integrity</h5>
+            <h5>TARGET: Training Target: Insecure Deserialization & Software Integrity</h5>
             <p><strong>Vulnerabilities Present:</strong></p>
             <ul>
                 <li>PHP unserialize() on user input</li>
@@ -173,7 +173,7 @@ O:15:"UserPreferences":1:{s:5:"theme";s:18:"&lt;?php system($_GET['cmd']); ?&gt;
                 </div>
 
                 <div class="card mt-3">
-                    <div class="card-header bg-info text-white"><h5>💡 Understanding the Risk</h5></div>
+                    <div class="card-header bg-info text-white"><h5>TIP: Understanding the Risk</h5></div>
                     <div class="card-body small">
                         <p><strong>What is Insecure Deserialization?</strong></p>
                         <p>Deserialization converts serialized data back into objects. If untrusted data is deserialized, attackers can:</p>
@@ -203,7 +203,7 @@ O:15:"UserPreferences":1:{s:5:"theme";s:18:"&lt;?php system($_GET['cmd']); ?&gt;
         </div>
 
         <div class="card mt-4">
-            <div class="card-header bg-success text-white"><h5>🛡️ How to Fix</h5></div>
+            <div class="card-header bg-success text-white"><h5>FIX: How to Fix</h5></div>
             <div class="card-body">
                 <pre>
 // 1. Never unserialize untrusted data

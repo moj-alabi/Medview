@@ -32,7 +32,7 @@ if(isset($_GET['logout'])) {
 <body>
     <div class="container mt-5">
         <div class="alert alert-danger">
-            <h4>🎯 Open Redirect Vulnerability</h4>
+            <h4>TARGET: Open Redirect Vulnerability</h4>
             <p><strong>Try these URLs:</strong></p>
             <ul>
                 <li><a href="?redirect=http://evil.com">Redirect to evil.com</a></li>
@@ -45,7 +45,7 @@ if(isset($_GET['logout'])) {
             <code>https://medview.com/vulnerable/open-redirect.php?redirect=http://fake-medview.com/login</code>
             <p class="mt-2 small">Victim sees trusted domain, clicks link, gets redirected to phishing site</p>
             
-            <h6 class="mt-3">🛡️ Fix:</h6>
+            <h6 class="mt-3">FIX: Fix:</h6>
             <pre class="bg-light p-2">// Whitelist allowed domains
 $allowed = ['medview.com', 'trusted-partner.com'];
 $parsed = parse_url($_GET['redirect']);

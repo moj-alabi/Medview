@@ -77,7 +77,7 @@ if(isset($_GET['view_appointment'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:
     </div>
 
     <div class="container-fluid">
@@ -208,7 +208,7 @@ if(isset($_GET['view_appointment'])) {
                 <!-- Debug Info - VULNERABILITY: Information Disclosure -->
                 <div class="card mt-4" style="border-color: #ffc107;">
                     <div class="card-header bg-warning">
-                        <h5>🐛 Debug Information (Information Disclosure Vulnerability)</h5>
+                        <h5>BUG: Debug Information (Information Disclosure Vulnerability)</h5>
                     </div>
                     <div class="card-body">
                         <pre><?php

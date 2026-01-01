@@ -75,7 +75,7 @@ if(isset($_POST['change_password'])) {
     </style>
 </head>
 <body>
-    <div class="warning-banner">⚠️ VULNERABLE VERSION - FOR TRAINING ONLY ⚠️</div>
+    <div class="warning-banner">WARNING: VULNERABLE VERSION - FOR TRAINING ONLY WARNING:</div>
 
     <div class="container-fluid">
         <div class="row">
@@ -194,7 +194,7 @@ if(isset($_POST['change_password'])) {
                 <!-- Debug information -->
                 <div class="card mt-4 border-warning">
                     <div class="card-header bg-warning">
-                        <h5>🐛 Debug Info (Information Disclosure)</h5>
+                        <h5>BUG: Debug Info (Information Disclosure)</h5>
                     </div>
                     <div class="card-body">
                         <pre><?php

@@ -67,13 +67,13 @@ function display_exploit_notification($exploit_result) {
         
         return '
         <div class="alert alert-'.$color.' alert-dismissible fade show exploit-notification" role="alert" style="position: fixed; top: 20px; right: 20px; z-index: 9999; min-width: 400px; animation: slideIn 0.5s;">
-            <h4 class="alert-heading">🎉 VULNERABILITY EXPLOITED!</h4>
+            <h4 class="alert-heading">SUCCESS: VULNERABILITY EXPLOITED!</h4>
             <hr>
             <p><strong>Vulnerability:</strong> '.$exploit_result['vulnerability'].'</p>
             <p><strong>Difficulty:</strong> <span class="badge badge-'.$color.'">'.$exploit_result['difficulty'].'</span></p>
             <p><strong>Reward:</strong> ₦'.number_format($exploit_result['reward'], 2).' NGN</p>
             <hr>
-            <p class="mb-0"><strong>🚩 FLAG:</strong></p>
+            <p class="mb-0"><strong>FLAG: FLAG:</strong></p>
             <code style="background: #000; color: #0f0; padding: 10px; display: block; font-size: 14px;">'.$exploit_result['flag'].'</code>
             <button type="button" class="close" data-dismiss="alert">&times;</button>
         </div>

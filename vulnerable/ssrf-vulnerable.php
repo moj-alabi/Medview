@@ -83,7 +83,7 @@ if(isset($_POST['parse_xml'])) {
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️ VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️
+        WARNING: VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:
     </div>
     
     <div class="container">
@@ -91,7 +91,7 @@ if(isset($_POST['parse_xml'])) {
         <p class="text-muted">Fetch patient data from external health APIs</p>
 
         <div class="alert alert-danger">
-            <h5>🎯 Training Target: Server-Side Request Forgery (SSRF)</h5>
+            <h5>TARGET: Training Target: Server-Side Request Forgery (SSRF)</h5>
             <p><strong>Vulnerabilities Present:</strong></p>
             <ul>
                 <li>No URL validation or whitelist</li>
@@ -191,7 +191,7 @@ dict://localhost:11211/stat
 
         <div class="card mt-4">
             <div class="card-header bg-info text-white">
-                <h5>💡 Understanding SSRF</h5>
+                <h5>TIP: Understanding SSRF</h5>
             </div>
             <div class="card-body">
                 <p>Server-Side Request Forgery allows an attacker to make the server perform HTTP requests to arbitrary locations.</p>
@@ -219,7 +219,7 @@ http://169.254.169.254/latest/meta-data/iam/security-credentials/role-name
 Returns: AWS access keys, secret keys, session tokens
 </pre>
 
-                <h6>🛡️ How to Fix:</h6>
+                <h6>FIX: How to Fix:</h6>
                 <pre>
 // 1. Whitelist allowed domains/IPs
 $allowed_hosts = ['api.trusted.com', 'api.partner.com'];

@@ -414,7 +414,7 @@ Add rule:
 Type: Response body
 Match: ₦1,000.00
 Replace: ₦999,000.00
-Enable: ✓
+Enable: [checked]
 ```
 
 ---

@@ -69,7 +69,7 @@
 </head>
 <body>
     <div class="warning-banner">
-        ⚠️⚠️⚠️ INTENTIONALLY VULNERABLE VERSION - FOR SECURITY TRAINING ONLY ⚠️⚠️⚠️
+        WARNING:WARNING:WARNING: INTENTIONALLY VULNERABLE VERSION - FOR SECURITY TRAINING ONLY WARNING:WARNING:WARNING:
         <br><small>DO NOT DEPLOY TO PRODUCTION OR PUBLIC SERVERS</small>
     </div>
 
@@ -211,38 +211,38 @@
                 <tbody>
                     <tr>
                         <td>SQL Queries</td>
-                        <td><span style="color: red;">❌ String concatenation</span></td>
-                        <td><span style="color: green;">✅ Prepared statements</span></td>
+                        <td><span style="color: red;">[X] String concatenation</span></td>
+                        <td><span style="color: green;">[OK] Prepared statements</span></td>
                     </tr>
                     <tr>
                         <td>Password Storage</td>
-                        <td><span style="color: red;">❌ MD5 / Plaintext</span></td>
-                        <td><span style="color: green;">✅ password_hash()</span></td>
+                        <td><span style="color: red;">[X] MD5 / Plaintext</span></td>
+                        <td><span style="color: green;">[OK] password_hash()</span></td>
                     </tr>
                     <tr>
                         <td>CAPTCHA</td>
-                        <td><span style="color: red;">❌ Disabled</span></td>
-                        <td><span style="color: green;">✅ Enabled</span></td>
+                        <td><span style="color: red;">[X] Disabled</span></td>
+                        <td><span style="color: green;">[OK] Enabled</span></td>
                     </tr>
                     <tr>
                         <td>2FA/OTP</td>
-                        <td><span style="color: red;">❌ Disabled</span></td>
-                        <td><span style="color: green;">✅ Email OTP</span></td>
+                        <td><span style="color: red;">[X] Disabled</span></td>
+                        <td><span style="color: green;">[OK] Email OTP</span></td>
                     </tr>
                     <tr>
                         <td>Input Validation</td>
-                        <td><span style="color: red;">❌ None</span></td>
-                        <td><span style="color: green;">✅ Comprehensive</span></td>
+                        <td><span style="color: red;">[X] None</span></td>
+                        <td><span style="color: green;">[OK] Comprehensive</span></td>
                     </tr>
                     <tr>
                         <td>Output Encoding</td>
-                        <td><span style="color: red;">❌ None</span></td>
-                        <td><span style="color: green;">✅ htmlspecialchars()</span></td>
+                        <td><span style="color: red;">[X] None</span></td>
+                        <td><span style="color: green;">[OK] htmlspecialchars()</span></td>
                     </tr>
                     <tr>
                         <td>CSRF Protection</td>
-                        <td><span style="color: red;">❌ None</span></td>
-                        <td><span style="color: green;">✅ Tokens</span></td>
+                        <td><span style="color: red;">[X] None</span></td>
+                        <td><span style="color: green;">[OK] Tokens</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -302,7 +302,7 @@
     <div class="footer">
         <p><strong>Medview+ Vulnerable Version</strong></p>
         <p>Educational Security Training Platform | Based on OWASP Top 10</p>
-        <p style="font-size: 0.9em;">⚠️ FOR TRAINING PURPOSES ONLY - DO NOT USE IN PRODUCTION ⚠️</p>
+        <p style="font-size: 0.9em;">WARNING: FOR TRAINING PURPOSES ONLY - DO NOT USE IN PRODUCTION WARNING:</p>
         <p style="font-size: 0.8em;">Learn to hack legally • Practice ethically • Secure the web</p>
     </div>
 
