@@ -277,32 +277,32 @@ Advanced MITM → All difficulty levels in guide 05
 ### **Week 1: Foundations**
 ```
 Day 1-2: Read 01-PROGRAM-OVERVIEW.md
-Day 3-4: Read 02-VULNERABILITY-CATALOG.md  
-Day 5-7: Practice 04-EXPLOITATION-SQLI.md (Low difficulty)
+Day 3-4: Read 02-CVE-MAPPING.md
+Day 5-7: Practice 04-COMPLETE-EXPLOITATION-WALKTHROUGH.md (Low difficulty)
 ```
 
 ### **Week 2: Basic Attacks**
 ```
-Day 8-9: Practice 05-EXPLOITATION-XSS.md
-Day 10-11: Practice 06-EXPLOITATION-IDOR.md
-Day 12-14: Complete all Low difficulty
+Day 8-9: Practice SQL Injection & XSS
+Day 10-11: Practice IDOR & other Low difficulty
+Day 12-14: Complete all Low difficulty vulnerabilities
 ```
 
 ### **Week 3-4: Intermediate**
 ```
-Week 3: Medium difficulty guides (08-11)
-Week 4: Tool mastery (20-TOOLS-REFERENCE.md)
+Week 3: Medium difficulty exploits
+Week 4: Tool mastery (05-MITM-ATTACKS-GUIDE.md)
 ```
 
 ### **Week 5-6: Advanced**
 ```
-Week 5: Hard difficulty guides (12-15)
-Week 6: Bypass techniques (21-BYPASS-TECHNIQUES.md)
+Week 5: Hard difficulty vulnerabilities
+Week 6: WAF bypass techniques
 ```
 
 ### **Week 7-8: Expert**
 ```
-Week 7: Impossible difficulty guides (16-19)
+Week 7: Impossible difficulty vulnerabilities
 Week 8: CTF completion & remediation study
 ```
 
@@ -344,10 +344,10 @@ Week 8: CTF completion & remediation study
 ## Support & Resources
 
 ### **Documentation:**
-- Main README: `VULNERABLE_VERSION_README.md`
-- Quick Start: `QUICK_START.md`
-- CVE Mapping: `CVE_MAPPING.md`
-- Cloudflare Setup: `CLOUDFLARE_SETUP.md`
+- Main README: `../README.md`
+- Installation: `../INSTALLATION.md`
+- License: `../LICENSE`
+- Runbook Index: `README.md` (this file)
 
 ### **External Resources:**
 - OWASP Testing Guide: https://owasp.org/www-project-web-security-testing-guide/
@@ -388,5 +388,3 @@ Start with: [01 - Program Overview & Features →](01-PROGRAM-OVERVIEW.md)
 **Total Pages:** 23
 **Estimated Reading Time:** 40+ hours
 **Hands-On Practice Time:** 80+ hours
-
-
