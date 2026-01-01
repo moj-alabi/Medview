@@ -528,9 +528,9 @@ Status: Properly secured
    - Capture your first flag!
 
 ### **Next Steps:**
-1. Read [02 - Vulnerability Catalog](02-VULNERABILITY-CATALOG.md)
-2. Understand [03 - Difficulty System](03-DIFFICULTY-SYSTEM.md)
-3. Practice [04 - SQL Injection Exploitation](04-EXPLOITATION-SQLI.md)
+1. Read [02 - Vulnerability Catalog](02-CVE-MAPPING.md)
+2. Understand [03 - Cloudflare WAF optional](03-CLOUDFLARE-SETUP.md)
+3. Practice [04 - Complete Exploitation Walkthrough](04-COMPLETE-EXPLOITATION-WALKTHROUGH.md) and [MITM Attack Guide](05-MITM-ATTACKS-GUIDE.md)
 
 ---
 
@@ -552,7 +552,7 @@ Use in isolated lab environments only
 
 ---
 
-**Next:** [02 - Vulnerability Catalog →](02-VULNERABILITY-CATALOG.md)
+**Next:** [02 - Vulnerability Catalog →](02-CVE-MAPPING.md)
 
 ---
 
